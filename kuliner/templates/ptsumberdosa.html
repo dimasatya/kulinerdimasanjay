@@ -1,0 +1,174 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <title>DIMAS SATYA MAHESWARA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+        color: #E0E0E0;
+        background: linear-gradient(to bottom, #0A0A0A, #333);
+        margin: 0;
+      }
+
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("C:/Users/USER/Downloads/masakan-indonesia.jpeg");  /* Ganti dengan URL gambar */
+        min-height: 75%;
+      }
+
+      .header-text {
+        font-family: "Pacifico", cursive;
+        font-size: 80px;
+        color: #FFD700;
+      }
+
+      .w3-top .w3-row {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .w3-panel.w3-leftbar.w3-light-grey {
+        background-color: #111;
+        color: #E0E0E0;
+      }
+
+      footer {
+        color: #E0E0E0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-middle w3-center">
+        <span class="header-text">MakananNusantara<br>Rumah Makan Oseng Scoobydoo</span>
+      </div>
+    </header>
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TENTANG MAKANAN NUSANTARA</span></h5>
+        <p>Makanan Nusantara menyajikan kelezatan kuliner Indonesia yang kaya akan rempah-rempah dan cita rasa autentik. Kami menawarkan hidangan khas dari berbagai daerah di Nusantara yang diolah dengan bahan-bahan alami dan bumbu pilihan.</p>
+        <div class="w3-panel w3-leftbar" style="background-color: #111; color: #E0E0E0;">
+          <p><i>"Rasakan kelezatan dan kekayaan cita rasa dari Nusantara yang tiada duanya."</i></p>
+        </div>
+        <img src="C:\Users\USER\Downloads\masakan-indonesia.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top"> <!-- Ganti dengan URL gambar -->
+        <p><strong>Jam Buka:</strong> setiap hari dari 6 pagi hingga 6 malam.</p>
+        <p><strong>Alamat:</strong> Jl. Gula Bogor Nomor 58, Jakarta</p>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="w3-container" id="video">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">VIDEO KULINER NUSANTARA</span></h5>
+        <div class="w3-center">
+          <video controls autoplay loop muted width="100%">
+            <source src="C:/Users/USER/Downloads/Teaser Kuliner Indonesia Kaya (Makassar, Solo, Minang) - IndonesiaKaya (1080p, h264, youtube).mp4" type="video/mp4"> <!-- Ganti dengan URL video -->
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU KAMI</span></h5>
+        <div class="w3-row w3-center w3-card w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+            <div class="w3-col s6 tablink">Makanan</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+            <div class="w3-col s6 tablink">Minuman</div>
+          </a>
+        </div>
+
+        <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Nasi Goreng Nusantara</h5>
+          <p class="w3-text-grey">Nasi goreng khas Indonesia dengan bumbu rempah dan topping spesial 20.000</p><br>
+          <h5>Rendang Padang</h5>
+          <p class="w3-text-grey">Daging sapi empuk dimasak dengan santan dan rempah 35.000</p><br>
+          <h5>Sate Ayam</h5>
+          <p class="w3-text-grey">Daging ayam panggang dengan bumbu kacang 25.000</p>
+        </div>
+
+        <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Es Teh Manis</h5>
+          <p class="w3-text-grey">Teh manis dingin segar 5.000</p><br>
+          <h5>Jus Mangga</h5>
+          <p class="w3-text-grey">Jus mangga asli tanpa tambahan gula 15.000</p><br>
+          <h5>Es Kelapa Muda</h5>
+          <p class="w3-text-grey">Segarnya air kelapa muda dengan daging kelapa 10.000</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOKASI RUMAH MAKAN KAMI</span></h5>
+    <p>Kunjungi kami di alamat Jl. Gula Bogor Nomor 89, Jakarta.</p>
+    <p><span class="w3-tag">FYI!</span> Kami melayani pesanan catering untuk berbagai acara besar atau kecil. Kami siap menghadirkan makanan Nusantara untuk Anda.</p>
+    
+    <!-- Contact Information -->
+    <div class="w3-panel w3-leftbar w3-light-grey" style="background-color: #111; color: #E0E0E0; margin-top: 32px;">
+      <h5 class="w3-center">Hubungi Kami</h5>
+      <p><strong>No Telp:</strong> <a href="tel:+6285158925811" style="color: #FFD700;">085158925811</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/dsm14s_x/" target="_blank" style="color: #FFD700;">@dsm14s_x</a></p>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+      <p>Website ini dibuat untuk memperkenalkan kekayaan kuliner Nusantara. Copyright @2024</p>
+    </footer>
+
+    <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
+
+  </body>
+</html>
